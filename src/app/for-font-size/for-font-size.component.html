@@ -1,0 +1,9 @@
+<div class="">
+  <label>Size:
+    <input placeholder="14" #element type="number" [value]="fontSize" (change)="changeSize($event.target)"
+           min="10" max="20">
+  </label>
+</div>
+<div>
+  <p [style.fontSize.px]="fontSize*10">Hi, this is first!</p>
+</div>
