@@ -7,6 +7,9 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ForFontSizeComponent } from './for-font-size/for-font-size.component';
 import { ForPetInfoComponent } from './for-pet-info/for-pet-info.component';
+import { ForCalculateComponent } from './for-calculate/for-calculate.component';
+import {FormsModule} from '@angular/forms';
+import { ForColorComponent } from './for-color/for-color.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { ForPetInfoComponent } from './for-pet-info/for-pet-info.component';
     HeaderComponent,
     FooterComponent,
     ForFontSizeComponent,
-    ForPetInfoComponent
+    ForPetInfoComponent,
+    ForCalculateComponent,
+    ForColorComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

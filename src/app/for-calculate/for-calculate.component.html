@@ -1,0 +1,10 @@
+<input type="text" [(ngModel)]="first">
+<select name="" id="" [(ngModel)]="operator">
+  <option value="+">+</option>
+  <option value="-">-</option>
+  <option value="*">*</option>
+  <option value="/">/</option>
+</select>
+<input type="text" [(ngModel)]="second">
+<button (click)="count()">=</button>
+<span>{{res}}</span>
